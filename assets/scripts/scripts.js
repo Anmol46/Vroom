@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+   $('#add-imgs-btn').click(function(){
+       $('#add-imgs-div').append("<input type='file' class='form-control' id='' name='car_image[]' placeholder='Enter'>");
+   });
+});
